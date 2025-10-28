@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route index element={<About/>}/>
-          <Route index element={<RoadMap/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/RoadMap' element={<RoadMap/>}/>
           <Route index element={<PathToBuy/>}/>
           <Route index element={<Partners/>}/>
         </Route>

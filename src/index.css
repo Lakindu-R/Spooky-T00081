@@ -279,11 +279,11 @@ body {
 }
 
 .bg-about {
-  background-image: url('/BgAbout.png');
+  background-image: url('/Bgabout.png');
 }
 
-.bg-services {
-  background-image: url('/BgServices.png');
+.bg-roadmap {
+  background-image: url('/Bgroadmap.png');
 }
 
 .bg-gallery {
