@@ -4,8 +4,8 @@ import Layout from './components/Layout/layout';
 import Home from './pages/Home/sections/home';
 import About from './pages/About/sections/about';
 import RoadMap from './pages/Roadmap/sections/roadmap';
-import PathToBuy from './pages/Home/sections/home';
-import Partners from './pages/Home/sections/home';
+import PathToBuy from './pages/PathtoBuy/sections/pathToBuy';
+import Partners from './pages/Partners/sections/partners';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/RoadMap" element={<RoadMap />} />
-            <Route index element={<PathToBuy />} />
-            <Route index element={<Partners />} />
+            <Route path="/pathtobuy" element={<PathToBuy />} />
+            <Route path="/partners" element={<Partners />} />
           </Route>
         </Routes>
       </BrowserRouter>
