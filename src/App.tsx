@@ -9,18 +9,20 @@ import Partners from './pages/Home/sections/home';
 
 function App() {
   return (
-    <BrowserRouter>
-    <Navbar/>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='/about' element={<About/>}/>
-          <Route path='/RoadMap' element={<RoadMap/>}/>
-          <Route index element={<PathToBuy/>}/>
-          <Route index element={<Partners/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/RoadMap" element={<RoadMap />} />
+            <Route index element={<PathToBuy />} />
+            <Route index element={<Partners />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
