@@ -44,6 +44,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* Screen sizes - Figma-optimized responsive breakpoints */
+  --screen-2xs: 375px;
   --screen-xs: 475px; /* Extra small devices */
   --screen-sm: 640px; /* Small devices (tablets) */
   --screen-md: 768px; /* Medium devices (small tablets/laptops) */

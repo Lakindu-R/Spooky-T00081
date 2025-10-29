@@ -27,7 +27,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-linear-to-b bg-transparent absolute top-0 left-0 right-0 z-50 py-4 md:py-1">
+    <nav className="bg-linear-to-b bg-transparent  h-[10vh] absolute top-0 left-0  right-0 z-50 py-4 md:py-1">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
