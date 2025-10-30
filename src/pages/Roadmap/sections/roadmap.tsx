@@ -50,7 +50,7 @@ function Roadmap() {
           />
         </div>
 
-        <div className="absolute bottom-8 left-4 z-10 sm:left-8 md:left-12 lg:left-16">
+        <div className="absolute bottom-[3%] left-[5%] z-10 sm:left-8 md:left-12 lg:left-[6%] ">
           <button onClick={handlePhaseClick}>
             <img
               src={phases[currentPhase].image}
