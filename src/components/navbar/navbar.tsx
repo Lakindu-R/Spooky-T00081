@@ -138,7 +138,7 @@ function Navbar() {
             </div>
 
             {/* Mobile Social Icons */}
-            <div className="flex items-center justify-center space-x-6 mt-auto mb-8">
+            <div className=" items-center justify-center space-x-6 mt-auto mb-8 hidden lg:flex">
               {socialIcons.map((social) => (
                 <a 
                   key={social.name}
