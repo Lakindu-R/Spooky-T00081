@@ -48,7 +48,7 @@ function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `text-white font-bold text-sm lg:text-base px-4 py-2 transition-all duration-300 ${
+                  `text-white font-normal text-sm lg:text-[32px] px-4 py-2 transition-all duration-300 ${
                     isActive
                       ? 'border-2 border-white rounded-full'
                       : 'hover:border-2 hover:border-white/50 hover:rounded-full'
@@ -102,7 +102,7 @@ function Navbar() {
 
         {/* Mobile Slide Menu */}
         <div 
-          className={`md:hidden fixed top-0 right-0 h-full w-64 bg-gradient-to-b from-red-600 via-emerald-800 to-emerald-900 shadow-2xl transition-transform duration-300 ${
+          className={`md:hidden fixed top-0 right-0 h-full w-64 bg-linear-to-b from-red-600 via-emerald-800 to-emerald-900 shadow-2xl transition-transform duration-300 ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
           style={{ zIndex: 100 }}
