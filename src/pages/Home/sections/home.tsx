@@ -2,6 +2,7 @@ import Spooky from '../../../../public/spooky.png';
 import TelegramIcon from '../../../../public/telegram.png';
 import TwitterIcon from '../../../../public/telegram.png';
 import DexIcon from '../../../../public/dex.png';
+import ShinyText from '@/components/ui/shinyText';
 function Home() {
   const socialIcons = [
     { name: 'Dex', icon: DexIcon, url: '#' },
@@ -15,13 +16,15 @@ function Home() {
     >
       <div className="mx-auto flex flex-col items-center justify-center px-4 sm:px-[2vw]">
         <div className="z-10 mt-[30%] flex flex-col items-center text-center sm:mt-[5%] xl:mt-[1%]">
-          <h1 className="bg-linear-to-r from-[#676565] via-[#FFFFFF] to-[#676565] bg-clip-text text-[15vh] font-normal text-transparent sm:text-[34vh] xl:text-[18.50vw]">
-            Spooky
-          </h1>
+          <ShinyText speedInMs={10000} className="w-fit">
+            <h1 className="text-[15vh] font-normal sm:text-[34vh] xl:text-[18.50vw]">
+              Spooky
+            </h1>
+          </ShinyText>
           <p className="Mansalva mt-0 text-[4.1vh] leading-tight text-white sm:mt-[-2vh] sm:text-[4vh] md:mt-[-14%] md:text-[3vh] lg:text-[3vh] xl:mt-[-9vh]">
             Join the Eerie Revolution in DeFi!
           </p>{' '}
-          <div className="md:hidden items-center gap-[10px] flex mt-[10%]">
+          <div className="mt-[10%] flex items-center gap-[10px] md:hidden">
             {socialIcons.map((social) => (
               <a
                 key={social.name}
