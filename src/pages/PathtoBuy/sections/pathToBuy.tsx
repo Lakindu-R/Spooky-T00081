@@ -32,8 +32,9 @@ function pathToBuy() {
   };
 
   return (
-    <section className="relative mx-auto h-[95vh] w-full overflow-hidden bg-linear-to-b from-[#0a1628] via-[#1a3a5c] to-[#2a4a6c]">
+    <section className="bg-roadmap relative mx-auto h-[95vh] w-full overflow-hidden">
       <div className="mx-auto max-w-3xl content-center">
+        {/* Bottom mountains */}
         <div className="absolute right-0 bottom-0 left-0 z-0">
           <img
             src={Bg}
@@ -42,35 +43,35 @@ function pathToBuy() {
           />
         </div>
 
-        <div className="absolute top-[20%] left-4 z-10 sm:left-8 md:left-12 lg:left-[26vh]">
+        <div className="absolute top-[20%] left-[30%] z-10 sm:left-8 md:left-12 md:top-[30%] lg:left-[2vh] xl:left-[5%] xl:top-[25%]">
           <img
             src={steps[currentStep].image}
             alt={`Spookies Step ${currentStep}`}
-            className="h-[180px] w-[180px] rounded-[30px] object-contain transition-opacity duration-300 sm:h-[220px] sm:w-[220px] md:h-[260px] md:w-[260px] lg:h-[300px] lg:w-[300px]"
+            className="h-[150px] w-[150px] rounded-[30px]  object-contain transition-opacity duration-300 sm:h-[220px] sm:w-[220px] md:h-[25vh] md:w-[25vw] lg:h-[300px] lg:w-[300px]"
           />
         </div>
-
-        <div className="absolute right-[8%] bottom-[0%] z-10 sm:right-8 md:right-12 lg:right-[16%]">
+        {/* Spooky charactor image */}
+        <div className="absolute right-[8%] bottom-[0%] z-10 sm:right-8 md:right-12 lg:right-[16%] lg:bottom-[-5%] ">
           <img
             src={Spookey}
             alt="Spooky Character"
-            className="h-auto w-[120px] object-contain drop-shadow-2xl sm:w-40 md:w-[200px] lg:w-[250px]"
+            className="h-auto w-[120px] object-contain drop-shadow-2xl sm:w-40 md:w-[200px] lg:w-[250px] xl:w-[20vw]"
           />
         </div>
 
-        <div className="relative z-20 mx-auto h-[95vh] max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <div className="relative z-20 mx-auto h-[95vh] max-w-7xl px-4 pt-[18%] sm:px-6 sm:py-16 lg:px-8 lg:py-20">
           <div className="relative flex h-[95vh] flex-col items-center">
-            <h1 className="absolute top-0 mb-8 pb-5 text-center text-5xl font-normal text-white sm:text-6xl md:text-7xl lg:mb-12 lg:text-[80px]">
+            <h1 className="absolute top-0 mb-8  pb-5 text-center text-5xl font-normal text-white sm:text-6xl md:text-7xl lg:mb-12 lg:text-[80px]">
               How to Buy
             </h1>
 
-            <div className="Mansalva absolute bottom-[35%] left-[26%] mt-24 w-full max-w-4xl sm:bottom-[40%]">
+            <div className="Mansalva absolute top-[20%] md:top-0 md:left-[26%] mt-24 w-full max-w-4xl sm:bottom-[40%] ">
               <div className="font-normal sm:p-8 md:p-10 lg:p-12">
-                <p className="mb-6 text-start text-base leading-relaxed text-white transition-opacity duration-300 sm:text-lg md:text-xl lg:mb-8 lg:text-xl">
+                <p className="mb-6 max-h-[150px] text-center md:w-[60vw] md:text-start  text-base leading-5 lg:leading-relaxed text-white transition-opacity duration-300 sm:text-lg md:text-xl lg:mb-8 lg:text-xl">
                   {steps[currentStep].content}
                 </p>
 
-                <div className="flex justify-start">
+                <div className="flex justify-center md:justify-start mt-13">
                   <button
                     onClick={handleNextClick}
                     className="transition-transform hover:scale-110"
