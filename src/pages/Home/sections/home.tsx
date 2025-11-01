@@ -16,7 +16,7 @@ function Home() {
     >
       <div className="mx-auto flex flex-col items-center justify-center px-4 sm:px-[2vw]">
         <div className="z-10 mt-[30%] flex flex-col items-center text-center sm:mt-[5%] xl:mt-[1%]">
-          <ShinyText speedInMs={10000} className="w-fit">
+          <ShinyText speedInMs={15000} className="w-fit">
             <h1 className="text-[15vh] font-normal sm:text-[34vh] xl:text-[18.50vw]">
               Spooky
             </h1>

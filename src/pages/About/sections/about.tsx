@@ -1,4 +1,6 @@
 import Mountains from '../../../../public/mountains.png';
+import Mountainsmobile from '../../../../public/mountainsMobile.png';
+import BgElements from '../../../../public/BG Element.png';
 import Spooky from '../../../../public/Spooky.png';
 import NextBtn from '../../../../public/nextbtn.png';
 
@@ -25,14 +27,20 @@ function About() {
     <section className="relative h-[95.5vh] w-full bg-linear-to-r from-[#001641] to-[#4067BA] md:overflow-hidden">
       {/* Background Images */}
       <img
-        src={Mountains}
+        src={BgElements}
         alt="Mountains"
-        className="absolute right-0 bottom-0 z-20 h-[50vh] w-[60vw] object-contain object-bottom-right"
+        className="absolute hidden md:block  object-cover"
       />
       <img
         src={Mountains}
         alt="Mountains"
-        className="absolute right-0 bottom-0 z-20 h-[50vh] w-[60vw] object-contain object-bottom-right"
+        className="absolute hidden md:block right-0 bottom-0 z-20 h-[50vh] w-[60vw] object-contain object-bottom-right"
+      />
+      {/* this image view only mobile view */}
+      <img
+        src={Mountainsmobile}
+        alt="Mountains"
+        className="md:hidden absolute right-0 -bottom-10 z-20 w-screen h-screen  object-contain object-bottom-right"
       />
       <img
         src={Spooky}
@@ -53,7 +61,7 @@ function About() {
             <h1 className="text-[40px] leading-tight font-normal text-white md:text-7xl lg:text-8xl">
               Ready for a Adventure
             </h1>
-            <p className="Mansalva mt-6 hidden h-[195px] max-w-[900px] text-lg leading-10 text-white md:text-xl lg:block lg:text-xl">
+            <p className="Mansalva mt-6 hidden h-[195px] max-w-[900px] text-lg leading-10 text-white md:text-xl md:block lg:text-xl">
               Welcome to Spooky, the token that&apos;s here to add a thrill to
               the blockchain! Built on a foundation of innovation, community,
               and just the right amount of spine-chilling fun, Spooky isn&apos;t
@@ -63,7 +71,7 @@ function About() {
               spookiest opportunities in DeFi.
             </p>
             {/* only mobile view text */}
-            <p className="Mansalva mt-6  h-[100px] max-w-[316px] text-[16px] leading-6 text-white md:text-xl lg:hidden ">
+            <p className="Mansalva mt-6  h-[100px] max-w-[316px] text-[16px] leading-6 text-white md:text-xl md:hidden ">
               Welcome to Spooky, the token that's here to add a thrill to the
               blockchain! Built on a foundation of innovation, community, and
               just the right amount of spine-chilling fun, Spooky isn’t just a
@@ -75,7 +83,7 @@ function About() {
           </div>
 
           {/* Why Spooky? */}
-          <div className="absolute bottom-0 hidden max-w-[900px] lg:block">
+          <div className="absolute bottom-0 hidden max-w-[900px] md:block">
             <h1 className="text-6xl leading-tight font-normal text-white md:text-7xl lg:text-6xl">
               Why Spooky?
             </h1>
