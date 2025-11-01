@@ -35,11 +35,11 @@ function pathToBuy() {
     <section className="bg-roadmap relative mx-auto h-[95vh] w-full overflow-hidden">
       <div className="mx-auto max-w-3xl content-center">
         {/* Bottom mountains */}
-        <div className="absolute right-0 bottom-0 left-0 z-0">
+        <div className="absolute right-0 bottom-0 left-0 z-0 ">
           <img
             src={Bg}
             alt="Background"
-            className="h-auto w-full object-cover lg:h-[80vh]"
+            className="h-auto w-full object-cover lg:h-[80vh] "
           />
         </div>
 

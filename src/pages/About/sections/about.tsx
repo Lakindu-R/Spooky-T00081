@@ -24,7 +24,7 @@ const whySpookyItems = [
 
 function About() {
   return (
-    <section className="relative h-[95.5vh] w-full bg-linear-to-r from-[#001641] to-[#4067BA] md:overflow-hidden">
+    <section className="relative h-[95.5vh] w-full bg-linear-to-r from-[#001641] to-[#4067BA] overflow-hidden">
       {/* Background Images */}
       <img
         src={BgElements}
@@ -47,12 +47,29 @@ function About() {
         alt="Spooky Monster"
         className="absolute right-[5%] bottom-[10%] z-10 w-[220px] lg:right-[2%] lg:bottom-[25%] lg:h-[60.75vh] lg:w-[24.42vw]"
       />
-      <a
-        href="/roadmap"
-        className="absolute right-[2%] bottom-[2%] z-50 hidden lg:block"
-      >
-        <img src={NextBtn} alt="Next: Roadmap" className="h-[16.35vh]" />
-      </a>
+      
+ <a
+      href="/roadmap"
+      className="absolute right-[2%] bottom-[2%] z-50 hidden lg:block group"
+    >
+      <div className="relative">
+        {/* Rotating colorful glow */}
+        <div className="absolute -inset-4 rounded-full opacity-75 blur-xl group-hover:opacity-100 transition-opacity duration-300 spin-gradient"></div>
+
+        {/* Secondary pulsing glow */}
+        <div className="absolute -inset-3 rounded-full bg-purple-500/40 blur-lg animate-pulse"></div>
+
+        {/* Image with hover scale */}
+        <div className="relative group-hover:scale-110 transition-transform duration-300">
+          <img
+            src={NextBtn}
+            alt="Next: Roadmap"
+            className="h-[16.35vh] relative z-10 drop-shadow-2xl"
+          />
+        </div>
+      </div>
+    </a>
+      
 
       <div className="relative z-30 mx-auto h-[95vh] max-w-7xl px-6 lg:px-0">
         <div className="grid gap-16 py-24 lg:gap-20 lg:py-32">

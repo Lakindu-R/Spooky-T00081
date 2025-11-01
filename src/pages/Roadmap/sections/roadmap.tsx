@@ -56,12 +56,12 @@ function Roadmap() {
           />
         </div>
 
-        <div className="absolute right-[5%] bottom-[3%] z-50 md:bottom-[1%] md:right-[1%] lg:left-[6%]">
-          <button onClick={handlePhaseClick}>
+        <div className="absolute right-[5%] bottom-[3%] z-50 md:bottom-[1%] md:right-[1%] lg:left-[6%] ">
+          <button onClick={handlePhaseClick} >
             <img
               src={phases[currentPhase].image}
               alt={`Phase ${currentPhase}`}
-              className="h-[20vh] w-[50vw] cursor-pointer object-contain sm:h-[242px] sm:w-[242px] md:h-[190px] md:w-[280px] lg:h-[70%] lg:w-[70%]"
+              className="sparkleh-[20vh] w-[50vw]  cursor-pointer object-contain sm:h-[242px] sm:w-[242px] md:h-[190px] md:w-[280px] lg:h-[70%] lg:w-[70%]"
             />
           </button>
         </div>

@@ -1,5 +1,4 @@
 import spookies from '../../../../public/spookies.png';
-import spookies2 from '../../../../public/spookies2.png';
 import Mountains from '../../../../public/mountains.png';
 import Bg from '../../../../public/PathtoBuy/bg.png';
 
