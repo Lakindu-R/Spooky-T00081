@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Spookies1 from '../../../../public/PathtoBuy/spookies1.png';
-import Spookies2 from '../../../../public/PathtoBuy/spookies2.png';
-import Spookies3 from '../../../../public/PathtoBuy/spookies3.png';
-import Spookey from '../../../../public/Spooky.png';
+import Spookies1 from '../../../../public/PathtoBuy/animate1.gif';
+import Spookies2 from '../../../../public/PathtoBuy/animate2.gif';
+import Spookies3 from '../../../../public/PathtoBuy/animate3.gif';
+import Spookey from '../../../../public/animate4.gif';
 import Nextbtn from '../../../../public/nextbtn.png';
 import Bg from '../../../../public/PathtoBuy/bg.png';
 
@@ -43,7 +43,7 @@ function pathToBuy() {
           />
         </div>
 
-        <div className="absolute top-[20%] left-[30%] z-10 sm:left-8 md:left-12 md:top-[30%] lg:left-[2vh] xl:left-[5%] xl:top-[25%]">
+        <div className="absolute top-[22%] left-[30%] z-10 sm:left-8 md:left-12 md:top-[30%] lg:left-[2vh] xl:left-[12%] xl:top-[25%]">
           <img
             src={steps[currentStep].image}
             alt={`Spookies Step ${currentStep}`}
@@ -55,7 +55,7 @@ function pathToBuy() {
           <img
             src={Spookey}
             alt="Spooky Character"
-            className="h-auto w-[120px] object-contain drop-shadow-2xl sm:w-40 md:w-[200px] lg:w-[250px] xl:w-[20vw]"
+            className="h-auto w-[120px] object-contain drop-shadow-2xl sm:w-40 md:w-[200px] lg:w-[250px] xl:w-[24vw]"
           />
         </div>
 
@@ -65,13 +65,13 @@ function pathToBuy() {
               How to Buy
             </h1>
 
-            <div className="Mansalva absolute top-[20%] md:top-0 md:left-[26%] mt-24 w-full max-w-4xl sm:bottom-[40%] ">
+            <div className="Mansalva absolute top-[20%] md:top-0 md:left-[26%] mt-24 md:mt-14 w-full max-w-4xl sm:bottom-[40%]">
               <div className="font-normal sm:p-8 md:p-10 lg:p-12">
                 <p className="mb-6 max-h-[150px] text-center md:w-[60vw] md:text-start  text-base leading-5 lg:leading-relaxed text-white transition-opacity duration-300 sm:text-lg md:text-xl lg:mb-8 lg:text-xl">
                   {steps[currentStep].content}
                 </p>
 
-                <div className="flex justify-center md:justify-start mt-13">
+                <div className="flex justify-center md:justify-start mt-[4%]">
                   <button
                     onClick={handleNextClick}
                     className="transition-transform hover:scale-110"

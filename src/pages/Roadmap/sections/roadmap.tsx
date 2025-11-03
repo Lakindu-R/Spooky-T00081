@@ -4,7 +4,7 @@ import right from '../../../../public/roadmap/right.png';
 import phase1 from '../../../../public/roadmap/phase1.png';
 import phase2 from '../../../../public/roadmap/phase2.png';
 import phase3 from '../../../../public/roadmap/phase3.png';
-import Spooky from '../../../../public/spooky.png';
+import Spooky3 from '../../../../public/animate3.gif';
 
 function Roadmap() {
   const [currentPhase, setCurrentPhase] = useState<1 | 2 | 3>(1);
@@ -61,7 +61,7 @@ function Roadmap() {
             <img
               src={phases[currentPhase].image}
               alt={`Phase ${currentPhase}`}
-              className="sparkleh-[20vh] w-[50vw]  cursor-pointer object-contain sm:h-[242px] sm:w-[242px] md:h-[190px] md:w-[280px] lg:h-[70%] lg:w-[70%]"
+              className="sparkleh-[20vh] w-[40vw]  cursor-pointer object-contain sm:w-[230px] md:h-[190px] md:w-[280px] lg:h-[70%] lg:w-[50%] xl:w-[70%]"
             />
           </button>
         </div>
@@ -87,11 +87,11 @@ function Roadmap() {
               </div>
             </div>
           </div>
-          <div className="absolute right-[10%] bottom-[5%] z-10 sm:right-8 sm:-bottom-16 md:right-[20%] md:bottom-[1%] lg:z-50 lg:right-[20%] lg:bottom-[-5%]">
+          <div className="absolute right-[20%] bottom-[5%] z-10 sm:right-[30%] sm:bottom-[-5%] md:right-[20%] md:bottom-[1%] lg:z-50 lg:right-[20%] lg:bottom-[-12%]">
             <img
-              src={Spooky}
+              src={Spooky3}
               alt="Spooky Character"
-              className="h-auto w-[35vh] object-contain drop-shadow-2xl sm:w-40 md:w-[250px] lg:w-[250px] xl:w-[25vw] brightness-75 md:brightness-100"
+              className="h-auto w-[40vh] object-contain drop-shadow-2xl sm:w-[50vh] md:w-[250px] lg:w-[250px] xl:w-[25vw] brightness-75 md:brightness-100"
             />
           </div>
         </div>

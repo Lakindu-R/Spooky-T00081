@@ -1,4 +1,6 @@
 import Spooky from '../../../../public/spooky.png';
+import Spooky1 from '../../../../public/animate.gif';
+import bg from '../../../../public/homeanimation.mp4';
 import TelegramIcon from '../../../../public/telegram.png';
 import TwitterIcon from '../../../../public/telegram.png';
 import DexIcon from '../../../../public/dex.png';
@@ -15,7 +17,7 @@ function Home() {
       className="bg-home bg-common relative h-[95.5vh] overflow-hidden"
     >
       <div className="mx-auto flex flex-col items-center justify-center px-4 sm:px-[2vw]">
-        <div className="z-10 mt-[30%] flex flex-col items-center text-center sm:mt-[5%] xl:mt-[1%]">
+        <div className="z-10 mt-[20%] flex flex-col items-center text-center sm:mt-[5%] xl:mt-[1%]">
           <ShinyText speedInMs={15000} className="w-fit">
             <h1 className="text-[15vh] font-normal sm:text-[34vh] xl:text-[18.50vw]">
               Spooky
@@ -42,9 +44,9 @@ function Home() {
             ))}
           </div>
           <img
-            src={Spooky}
+            src={Spooky1}
             alt="Spooky Monster"
-            className="absolute bottom-0 mx-auto mt-[20%] h-auto w-[55vw] max-w-[469px] sm:mt-[20.83%] sm:w-[35vw] lg:w-[30.83vw] xl:w-[35vh]"
+            className="absolute bottom-0 mx-auto mt-[20%] h-auto w-[55vw] max-w-[469px] sm:mt-[20.83%] sm:w-[35vw] sm:-bottom-[-10%] md:-bottom-[15%] lg:-bottom-10 lg:w-[30.83vw] xl:w-[45vh]"
           />
         </div>
       </div>
